@@ -23,12 +23,13 @@ module.exports = {
 	resolve: {
 		alias: {
 			//AliasName: path.resolve(__dirname, './alias/path'),
-			Main: 				path.resolve(__dirname, './app/component/Main'),
-			Nav: 				path.resolve(__dirname, './app/component/Nav'),
+			Main: 				path.resolve(__dirname, 'Main'),
+			Nav: 				path.resolve(__dirname, 'Nav'),
 			applicationStyles: 	path.resolve(__dirname, './app/styles/app.scss')
 			
 		},
-		extensions: ["*",".js",".jsx"]
+		extensions: ["*",".js",".jsx"],
+		modules: ['node_modules','./app/components']
 	},
 	module: {
 		loaders: [
