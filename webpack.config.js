@@ -21,15 +21,17 @@ module.exports = {
 		filename: "./public/bundle.js"
 	},
 	resolve: {
+		modules: ['node_modules','./app/components/'],
 		alias: {
 			//AliasName: path.resolve(__dirname, './alias/path'),
 			Main: 				path.resolve(__dirname, 'Main'),
 			Nav: 				path.resolve(__dirname, 'Nav'),
-			applicationStyles: 	path.resolve(__dirname, './app/styles/app.scss')
-			
+			applicationStyles: 	path.resolve(__dirname, './app/styles/app.scss'),
+			// TodoApp: 			path.resolve(__dirname, './app/components/TodoApp.jsx'),
+			// Search: 			path.resolve(__dirname, './app/components/Search.jsx'),
+			// Todo: 				path.resolve(__dirname, './app/components/Todo.jsx')
 		},
-		extensions: ["*",".js",".jsx"],
-		modules: ['node_modules','./app/components']
+		extensions: ["*",".js",".jsx"]
 	},
 	module: {
 		loaders: [
