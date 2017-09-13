@@ -3,7 +3,6 @@ const ReactDOM = require('react-dom');
 const {Route, Router, IndexRoute, hashHistory} = require('react-router');
 const $ = require('jQuery');
 const TodoApp = require('TodoApp');
-const Search = require('Search');
 
 //load foundation
 //require('style-loader!css-loader!foundation-sites/dist/css/foundation.min.css');
