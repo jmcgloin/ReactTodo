@@ -9,4 +9,14 @@ describe('TodoApp', () => {
 	it('should exist', () => {
 		expect('TodoApp').toExist();
 	});
+
+	it('should add a new todo', () => {
+		let todoText = 'test';
+		let todoApp = TestUtils.renderIntoDocument(<TodoApp />);
+
+		todoApp.setState({todos: []});
+		todoApp.handleNewTodo(todoText);
+
+		expect(todoApp.state.todos[0].text).toBe('test');
+	});
 });
