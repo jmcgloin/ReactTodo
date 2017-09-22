@@ -26,10 +26,7 @@ module.exports = {
 			//AliasName: path.resolve(__dirname, './alias/path'),
 			Main: 				path.resolve(__dirname, 'Main'),
 			Nav: 				path.resolve(__dirname, 'Nav'),
-			applicationStyles: 	path.resolve(__dirname, './app/styles/app.scss'),
-			// TodoApp: 			path.resolve(__dirname, './app/components/TodoApp.jsx'),
-			// Search: 			path.resolve(__dirname, './app/components/Search.jsx'),
-			// Todo: 				path.resolve(__dirname, './app/components/Todo.jsx')
+			applicationStyles: 	path.resolve(__dirname, './app/styles/app.scss')
 		},
 		extensions: ["*",".js",".jsx"]
 	},
