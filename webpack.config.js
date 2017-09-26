@@ -21,7 +21,11 @@ module.exports = {
 		filename: "./public/bundle.js"
 	},
 	resolve: {
-		modules: ['node_modules','./app/components/'],
+		modules: [
+			'node_modules',
+			'./app/components/',
+			'./app/api'
+		],
 		alias: {
 			//AliasName: path.resolve(__dirname, './alias/path'),
 			Main: 				path.resolve(__dirname, 'Main'),
