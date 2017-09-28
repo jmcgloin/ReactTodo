@@ -18,4 +18,21 @@ module.exports = {
 		}
 		return $.isArray(todos) ? todos : [];
 	},
+
+	filterTodos: function(todos, showCompleted, searchText) {
+		let filteredTodos = todos;
+
+		filteredTodos = filteredTodos.filter(todo => !todo.completed || showCompleted);
+		
+		if(searchText !== '') {
+			filteredTodos = filteredTodos.filter(todo => todo.text.toLowerCase().indexOf(searchText) > -1);
+		}
+		if(showCompleted) {
+			let completedTodos = filteredTodos.filter(todo => todo.completed);
+			let uncompletedTodos = filteredTodos.filter(todo => !todo.completed);
+			filteredTodos = uncompletedTodos.concat(completedTodos);
+		}
+
+		return filteredTodos;
+	}
 }
