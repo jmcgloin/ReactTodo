@@ -24,7 +24,8 @@ module.exports = {
 		modules: [
 			'node_modules',
 			'./app/components/',
-			'./app/api'
+			'./app/api',
+			'./app/styles'
 		],
 		alias: {
 			//AliasName: path.resolve(__dirname, './alias/path'),
@@ -58,7 +59,7 @@ module.exports = {
              			options: {
                			includePaths: [
                  				path.resolve(__dirname, './app/styles'),
-                 				path.resolve(__dirname, './node_modules/foundation-sites/scss'),
+                 				path.resolve(__dirname, './node_modules/foundation-sites/scss')
                				]
              			}
            			}
