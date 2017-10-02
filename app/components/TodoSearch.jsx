@@ -9,14 +9,15 @@ const TodoSearch = React.createClass({
 	},
 	render: function () {
 		return (
-			<div className='row'>
-				<div className='columns medium-4 medium-centered'>
-					<form ref='searchForm'>
-						<input type='search' id='search-text' ref='searchText' placeholder='Search' onChange={this.onChange}></input>
-						<label>
-							<input type='checkbox' onChange={this.onChange} id='show-complete' ref='showComplete'></input> Show Completed
-						</label>
-					</form>
+			<div className='container__header'>
+				<div>
+					<input type='search' ref='searchText' placeholder='Search' onChange={this.onChange} />
+				</div>
+				<div>
+					<label>
+						<input type='checkbox' onChange={this.onChange} ref='showComplete' />
+						Show Completed Todos
+					</label>
 				</div>
 			</div>
 		);

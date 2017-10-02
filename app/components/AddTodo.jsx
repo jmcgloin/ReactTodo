@@ -14,7 +14,7 @@ const AddTodo = React.createClass({
 	},
 	render: function () {
 		return (
-			<div>
+			<div className='container__footer'>
 				<form ref='form' className='todo-form' onSubmit={this.onSubmit}>
 					<input type='text' ref='newTodo' id='newTodo' placeholder='Enter new todo item'></input>
 					<button className='button expanded'>Add New Todo</button>
