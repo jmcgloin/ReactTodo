@@ -31,7 +31,10 @@ module.exports = {
 			//AliasName: path.resolve(__dirname, './alias/path'),
 			Main: 				path.resolve(__dirname, 'Main'),
 			Nav: 				path.resolve(__dirname, 'Nav'),
-			applicationStyles: 	path.resolve(__dirname, './app/styles/app.scss')
+			applicationStyles: 	path.resolve(__dirname, './app/styles/app.scss'),
+			actions: 			path.resolve(__dirname, './app/actions/actions.jsx'),
+			reducers: 			path.resolve(__dirname, './app/reducers/index.jsx'),
+			store: 				path.resolve(__dirname, './app/store/configureStore.jsx')
 		},
 		extensions: ["*",".js",".jsx"]
 	},
